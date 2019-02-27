@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Kaplan Code Test Challenges" parallel="tests" thread-count="1">
+	
+<!-- ======================================Challenge 1=========================================================== -->
+	<test verbose="5" name="Broken Links Testing"
+		enabled="false">
+		<parameter name="Url"
+			value="http://wwww.codetraverse.com/"/>
+		<classes>
+			<class
+				name="com.kaplan.codetest.testscripts.CheckingBrokenLinks" />
+		</classes>
+	</test>
+	
+<!-- ======================================Challenge 2=========================================================== -->
+	<test verbose="5" name="Mail Checking"
+		enabled="false">
+		<classes>
+			<class
+				name="com.kaplan.codetest.testscripts.CheckingMail" />
+		</classes>
+	</test>
+<!-- ======================================Challenge 3=========================================================== -->
+	<test verbose="5" name="Applying Educational Loan"
+		enabled="false">
+		<classes>
+			<class
+				name="com.kaplan.codetest.testscripts.ApplyingEducationLoan" />
+		</classes>
+	</test>
+<!-- ======================================Challenge 4=========================================================== -->
+	<test verbose="5" name="Flight Booking"
+		enabled="false">
+		<parameter name="departuredate"
+			value="2019-03-05"/>	
+		<classes>
+			<class
+				name="com.kaplan.codetest.testscripts.BookingFlight" />
+		</classes>
+	</test>
+</suite>
+
